@@ -1,0 +1,13 @@
+<div id="frame">
+  <h3>List component</h3>
+  <div>
+    <input type="text" [(ngModel)]="inputText">
+    <button class="btn add-button" (click)="addElement()">Dodaj</button>
+  </div>
+  <ul>
+    <li *ngFor="let element of listElements; index as i">
+      {{element}}
+      <button class="btn delete-button" (click)="removeElement(i)">Usuń</button>
+    </li>
+  </ul>
+</div>
