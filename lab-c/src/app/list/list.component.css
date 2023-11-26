@@ -1,0 +1,17 @@
+li {
+  margin-bottom: 8px;
+}
+
+.delete-button {
+  margin-left: 16px;
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.delete-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
