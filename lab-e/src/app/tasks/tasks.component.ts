@@ -67,4 +67,12 @@ export class TasksComponent {
       this.getTasks();
     });
   }
+
+  canAddTask() {
+    return !this.newTask.title;
+  }
+
+  canArchiveTasks() {
+    return this.tasks.some(t => t.completed);
+  }
 }
